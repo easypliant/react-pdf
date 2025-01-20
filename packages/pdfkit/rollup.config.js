@@ -7,7 +7,7 @@ import alias from '@rollup/plugin-alias';
 import nodePolyfills from 'rollup-plugin-polyfill-node';
 import commonjs from '@rollup/plugin-commonjs';
 
-import pkg from './package.json' assert { type: 'json' };
+import pkg from './package.json' with { type: 'json' };
 
 const input = 'src/index.js';
 
@@ -62,7 +62,7 @@ const getPlugins = ({ browser }) => [
       BROWSER: JSON.stringify(browser)
     }
   }),
-  babel(babelConfig())
+  babel(babelConfig()),
 ];
 
 const serverConfig = {
@@ -79,4 +79,7 @@ const browserConfig = {
   plugins: getPlugins({ browser: true })
 };
 
-export default [serverConfig, browserConfig];
+export default [
+  serverConfig,
+  browserConfig,
+];

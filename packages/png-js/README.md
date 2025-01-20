@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/5600341/27505816-c8bc37aa-587f-11e7-9a86-08a2d081a8b9.png" height="280px">
 </p>
 
-# @react-pdf/png-js
+# @easypliant/react-pdf-png-js
 
 A PNG decoder in JS for the canvas element or Node.js.
 
@@ -39,7 +39,7 @@ Install the module using npm
 
 Require the module and decode a PNG
 
-    var PNG = require('png-js');
+    import PNG from 'png-js';
     PNG.decode('some.png', function(pixels) {
         // pixels is a 1d array (in rgba order) of decoded pixel data
     });

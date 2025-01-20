@@ -28,7 +28,6 @@ declare namespace ReactPDF {
   interface Styles {
     [key: string]: Style;
   }
-
   interface OnRenderProps {
     blob?: Blob;
   }
@@ -49,6 +48,7 @@ declare namespace ReactPDF {
   interface DocumentProps {
     attachments: Attachment[];
     author?: string;
+    creationDate?: Date;
     creationDate?: Date;
     creator?: string;
     keywords?: string;
@@ -212,6 +212,14 @@ declare namespace ReactPDF {
     hyphenationCallback?: HyphenationCallback;
   }
 
+  interface XmlProps {
+    value: string;
+  }
+  /**
+   * A React component for embedding XML metadata to the PDF document.
+   */
+  export class Xml extends React.Component<XmlProps> {}
+
   /**
    * A React component for displaying text. Text supports nesting of other
    * Text or Link components to create inline styling.
@@ -232,12 +240,6 @@ declare namespace ReactPDF {
     href?: string;
     src?: string;
   }
-
-  interface XmlProps {
-    value: string;
-  }
-
-  export class Xml extends React.Component<XmlProps> {}
 
   /**
    * A React component for displaying a hyperlink. Link’s can be nested

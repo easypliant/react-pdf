@@ -2,8 +2,10 @@ import FontStore from "@easypliant/react-pdf-font";
 import renderPDF from "@easypliant/react-pdf-render";
 import PDFDocument from "@easypliant/react-pdf-pdfkit";
 import layoutDocument from "@easypliant/react-pdf-layout";
+
 import createRenderer from "./renderer";
 import packageJson from "../package.json";
+import { omitNils } from "./utils";
 
 const { version } = packageJson;
 
@@ -34,12 +36,37 @@ const pdf = (initialValue) => {
 
   const render = async (compress = true) => {
     const props = container.document.props || {};
-    const { subset, tagged, pdfVersion, language, pageLayout, pageMode } = props;
+    const {
+      author,
+      creationDate = new Date(),
+      creator = "react-pdf",
+      keyboards,
+      language,
+      modificationDate,
+      pageLayout,
+      pageMode,
+      pdfVersion,
+      producer = "react-pdf",
+      subject,
+      subset,
+      tagged,
+      title,
+    } = props;
 
     const ctx = new PDFDocument({
       autoFirstPage: false,
       compress,
       displayTitle: true,
+      info: omitNils({
+        Title: title,
+        Author: author,
+        Subject: subject,
+        Keywords: keyboards,
+        Creator: creator,
+        Producer: producer,
+        CreationDate: creationDate,
+        ModificationDate: modificationDate,
+      }),
       lang: language,
       pageLayout,
       pageMode,

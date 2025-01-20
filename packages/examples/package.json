@@ -1,0 +1,12 @@
+{
+  "name": "@easypliant/react-pdf-examples",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Diego Muracciole <diegomuracciole@gmail.com>",
+  "homepage": "https://github.com/easypliant/react-pdf#readme",
+  "repository": "git+https://github.com/easypliant/react-pdf.git",
+  "scripts": {
+    "dev": "./dev.sh"
+  }
+}

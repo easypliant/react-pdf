@@ -1,11 +1,10 @@
 import fs from 'fs';
-import crypto from "node:crypto";
-
-export const generateChecksum = (buffer, algorithm = "md5") => {
-  const hash = crypto.createHash(algorithm);
-  hash.update(buffer);
-  return hash.digest("hex");
-};
+// This file is ran directly with Node - needs to have .js extension
+// eslint-disable-next-line import/extensions
+import * as CryptoJS from 'crypto-js/core.js';
+// This file is ran directly with Node - needs to have .js extension
+// eslint-disable-next-line import/extensions
+import MD5 from 'crypto-js/md5.js';
 
 export default {
   /**
@@ -18,12 +17,12 @@ export default {
    *  * options.hidden: if true, do not add attachment to EmbeddedFiles dictionary. Useful for file attachment annotations
    *  * options.creationDate: override creation date
    *  * options.modifiedDate: override modified date
-   *  * options.relationship: Relationship between the PDF document and its attached file. Can be 'Alternative', 'Data', 'Source', 'Supplement' or 'Unspecified'.
+    *  * options.relationship: Relationship between the PDF document and its attached file. Can be 'Alternative', 'Data', 'Source', 'Supplement' or 'Unspecified'.
    * @returns filespec reference
    */
   file(src, options = {}) {
     options.name = options.name || src;
-    options.relationship = options.relationship || 'Unspecified';
+    options.relationship = options.relationship || "Unspecified";
 
     const refBody = {
       Type: 'EmbeddedFile',
@@ -73,8 +72,7 @@ export default {
     }
 
     // add checksum and size information
-    // const checksum = MD5(CryptoJS.lib.WordArray.create(new Uint8Array(data)));
-    const checksum = generateChecksum(data);
+    const checksum = MD5(CryptoJS.lib.WordArray.create(new Uint8Array(data)));
     refBody.Params.CheckSum = new String(checksum);
     refBody.Params.Size = data.byteLength;
 
@@ -109,9 +107,9 @@ export default {
       this.addNamedEmbeddedFile(options.name, filespec);
     }
 
-    // Add file to the catalogue to be PDF/A3 compliant
-    if (this._root.data.AF) {
-      this._root.data.AF.push(filespec);
+     // Add file to the catalogue to be PDF/A3 compliant
+    if(this._root.data.AF) {
+      this._root.data.AF.push(filespec)
     } else {
       this._root.data.AF = [filespec];
     }

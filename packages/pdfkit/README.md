@@ -2,9 +2,9 @@
   <img src="https://user-images.githubusercontent.com/5600341/27505816-c8bc37aa-587f-11e7-9a86-08a2d081a8b9.png" height="280px">
 </p>
 
-# @react-pdf/pdfkit
+# @easypliant/react-pdf-pdfkit
 
-A JavaScript PDF generation library for Node and the browser. Fork uses node modules, so it is not browser compatible.
+A JavaScript PDF generation library for Node and the browser.
 
 ## Acknowledges
 
@@ -28,7 +28,7 @@ You can also try out an interactive in-browser demo of PDFKit [here](http://pdfk
 
 Installation uses the [npm](http://npmjs.org/) package manager. Just type the following command after installing npm.
 
-    npm install @react-pdf/pdfkit
+    npm install @easypliant/react-pdf-pdfkit
 
 ## Features
 

@@ -1,18 +1,18 @@
 {
   "name": "@easypliant/react-pdf-e2e-node-esm",
-  "version": "3.0.2",
+  "version": "2.0.16",
   "license": "MIT",
   "private": true,
   "type": "module",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
-  "repository": "git@github.com:diegomura/react-pdf.git",
+  "homepage": "https://github.com/easypliant/react-pdf#readme",
+  "repository": "git+https://github.com/easypliant/react-pdf.git",
   "scripts": {
     "dev": "node --watch ./index.js",
     "start": "node ./index.js"
   },
   "dependencies": {
-    "@easypliant/react-pdf-renderer": "^5.1.1",
+    "@easypliant/react-pdf-renderer": "^4.1.6",
     "react": "^18.2.0"
   }
 }

@@ -91,7 +91,7 @@ export interface Style {
   textDecorationStyle?: "dashed" | "dotted" | "solid" | string; // ?
   textIndent?: any; // ?
   textOverflow?: "ellipsis";
-  textTransform?: "capitalize" | "lowercase" | "uppercase";
+  textTransform?: "capitalize" | "lowercase" | "uppercase" | "none";
   verticalAlign?: "sub" | "super";
 
   // Sizing/positioning

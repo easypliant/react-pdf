@@ -31,6 +31,5 @@ export default defineConfig({
     setupFiles: ["vitest.setup.js"],
     include: ["tests/{components,dom,usePDF}.test.*"],
     watch: false,
-    name: "renderer-browser",
   },
 });

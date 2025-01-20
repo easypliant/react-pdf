@@ -1,7 +1,6 @@
 import fs from "fs";
 import url from "url";
 import path from "path";
-import fetch from "cross-fetch";
 
 import PNG from "./png";
 import JPEG from "./jpeg";
@@ -42,7 +41,9 @@ const fetchLocalFile = (src) =>
 
 const fetchRemoteFile = async (uri, options) => {
   const response = await fetch(uri, options);
+
   const buffer = await (response.buffer ? response.buffer() : response.arrayBuffer());
+
   return buffer.constructor.name === "Buffer" ? buffer : Buffer.from(buffer);
 };
 
@@ -133,7 +134,6 @@ const resolveBlobImage = async (blob) => {
 };
 
 const getImageFormat = (body) => {
-  // const isPng = body[0] === 0x89 && body[1] === 0x50 && body[2] === 0x4e && body[3] === 0x47;
   const isPng =
     body[0] === 137 &&
     body[1] === 80 &&
@@ -144,7 +144,6 @@ const getImageFormat = (body) => {
     body[6] === 26 &&
     body[7] === 10;
 
-  // const isJpg = body[0] === 0xff && body[1] === 0xd8;
   const isJpg = body[0] === 255 && body[1] === 216 && body[2] === 255;
 
   let extension = "";

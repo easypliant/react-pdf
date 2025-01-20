@@ -1,12 +1,12 @@
 import json from "@rollup/plugin-json";
 import babel from "@rollup/plugin-babel";
 
-import pkg from "./package.json" assert { type: "json" };
+import pkg from "./package.json" with { type: "json" };
 
 const config = {
   input: "src/index.js",
   output: { format: "es", file: "lib/index.js" },
-  external: Object.keys(pkg.dependencies).concat(/@babel\/runtime/, /@react-pdf/),
+  external: Object.keys(pkg.dependencies).concat(/@babel\/runtime/, /@easypliant/),
   plugins: [
     json(),
     babel({

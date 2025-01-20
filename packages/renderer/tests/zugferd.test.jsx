@@ -110,6 +110,6 @@ describe("node", () => {
     const pdfPath = `${__dirname}/test.pdf`;
     await ReactPDF.renderToFile(<TestDocument />, pdfPath);
     expect(fs.existsSync(pdfPath)).toBeTruthy();
-    // fs.unlinkSync(pdfPath);
+    fs.unlinkSync(pdfPath);
   });
 });
