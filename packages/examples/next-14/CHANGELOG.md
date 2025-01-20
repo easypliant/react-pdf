@@ -1,5 +1,16 @@
 # next-14
 
+## 2.0.0
+
+### Major Changes
+
+- Major bump
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-renderer@6.0.0
+
 ## 1.0.0
 
 ### Major Changes

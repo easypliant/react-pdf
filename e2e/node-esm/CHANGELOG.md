@@ -1,5 +1,16 @@
 # @easypliant/react-pdf-e2e-node-esm
 
+## 4.0.0
+
+### Major Changes
+
+- Major bump
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-renderer@6.0.0
+
 ## 3.0.0
 
 ### Major Changes

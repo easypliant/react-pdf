@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-fns
 
+## 5.0.0
+
+### Major Changes
+
+- Major bump
+
 ## 4.0.0
 
 ### Major Changes

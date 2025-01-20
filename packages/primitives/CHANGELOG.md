@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-primitives
 
+## 6.0.0
+
+### Major Changes
+
+- Major bump
+
 ## 5.0.0
 
 ### Major Changes

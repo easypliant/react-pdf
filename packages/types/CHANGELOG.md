@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-types
 
+## 4.0.0
+
+### Major Changes
+
+- Major bump
+
 ## 3.0.0
 
 ### Major Changes

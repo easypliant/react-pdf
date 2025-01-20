@@ -1,5 +1,16 @@
 # @easypliant/react-pdf-textkit
 
+## 7.0.0
+
+### Major Changes
+
+- Major bump
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-fns@5.0.0
+
 ## 6.0.0
 
 ### Major Changes

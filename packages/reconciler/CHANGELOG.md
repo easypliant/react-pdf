@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-reconciler
 
+## 3.0.0
+
+### Major Changes
+
+- Major bump
+
 ## 2.0.0
 
 ### Major Changes
