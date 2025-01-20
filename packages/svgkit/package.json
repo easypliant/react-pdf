@@ -1,13 +1,13 @@
 {
   "name": "@easypliant/react-pdf-svgkit",
   "license": "MIT",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A SVG generation library for Node.js and browser",
   "type": "module",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/easypliant/react-pdf.git",
     "directory": "packages/svgkit"
   },
   "contributors": [
@@ -23,6 +23,6 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.20.13",
-    "@easypliant/react-pdf-pdfkit": "^6.0.0"
+    "@easypliant/react-pdf-pdfkit": "^6.0.1"
   }
 }

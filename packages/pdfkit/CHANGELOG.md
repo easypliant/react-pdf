@@ -1,5 +1,14 @@
 # @easypliant/react-pdf-pdfkit
 
+## 6.0.1
+
+### Patch Changes
+
+- Fix: release config
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-png-js@5.0.1
+
 ## 6.0.0
 
 ### Major Changes

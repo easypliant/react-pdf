@@ -1,5 +1,14 @@
 # @easypliant/react-pdf-font
 
+## 5.0.1
+
+### Patch Changes
+
+- Fix: release config
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-types@4.0.1
+
 ## 5.0.0
 
 ### Major Changes

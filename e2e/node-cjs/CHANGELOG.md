@@ -1,5 +1,12 @@
 # @easypliant/react-pdf-e2e-node-cjs
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-renderer@6.0.1
+
 ## 4.0.0
 
 ### Major Changes

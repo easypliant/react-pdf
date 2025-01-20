@@ -1,5 +1,20 @@
 # @easypliant/react-pdf-renderer
 
+## 6.0.1
+
+### Patch Changes
+
+- Fix: release config
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-primitives@6.0.1
+  - @easypliant/react-pdf-reconciler@3.0.1
+  - @easypliant/react-pdf-layout@6.0.1
+  - @easypliant/react-pdf-pdfkit@6.0.1
+  - @easypliant/react-pdf-render@6.0.1
+  - @easypliant/react-pdf-types@4.0.1
+  - @easypliant/react-pdf-font@5.0.1
+
 ## 6.0.0
 
 ### Major Changes

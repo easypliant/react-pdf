@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-png-js
 
+## 5.0.1
+
+### Patch Changes
+
+- Fix: release config
+
 ## 5.0.0
 
 ### Major Changes

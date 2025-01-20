@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-reconciler
 
+## 3.0.1
+
+### Patch Changes
+
+- Fix: release config
+
 ## 3.0.0
 
 ### Major Changes

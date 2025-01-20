@@ -1,6 +1,6 @@
 {
   "name": "@easypliant/react-pdf-types",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "license": "MIT",
   "description": "React-pdf TypeScript definitions",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
@@ -8,7 +8,7 @@
   "main": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/easypliant/react-pdf.git",
     "directory": "packages/types"
   }
 }

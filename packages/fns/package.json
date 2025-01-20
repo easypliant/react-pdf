@@ -1,6 +1,6 @@
 {
   "name": "@easypliant/react-pdf-fns",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "license": "MIT",
   "description": "React-pdf helper functions",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
@@ -9,7 +9,7 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/easypliant/react-pdf.git",
     "directory": "packages/fns"
   },
   "scripts": {

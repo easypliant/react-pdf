@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-types
 
+## 4.0.1
+
+### Patch Changes
+
+- Fix: release config
+
 ## 4.0.0
 
 ### Major Changes

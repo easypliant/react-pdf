@@ -1,5 +1,14 @@
 # @easypliant/react-pdf-image
 
+## 5.0.1
+
+### Patch Changes
+
+- Fix: release config
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-png-js@5.0.1
+
 ## 5.0.0
 
 ### Major Changes
