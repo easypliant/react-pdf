@@ -25,6 +25,7 @@ export default defineConfig({
         : undefined,
   },
   test: {
+    name: `renderer-browser`,
     // Necessary to avoid "Module did not self-register" error with canvas.node
     pool: "forks",
     setupFiles: ["vitest.setup.js"],

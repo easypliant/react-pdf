@@ -21,7 +21,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should fetch remote image using GET method by default", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     await resolveImage({ uri: jpgImageUrl });
 
@@ -29,7 +29,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should fetch remote image using passed method", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     await resolveImage({ uri: jpgImageUrl, method: "POST" });
 
@@ -37,7 +37,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should fetch remote image using passed headers", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     const headers = { Authorization: "Bearer qwerty" };
     await resolveImage({ uri: jpgImageUrl, headers });
@@ -47,7 +47,7 @@ describe("image resolveImage", () => {
 
   // TypeError: Request with GET/HEAD method cannot have body
   test.skip("Should fetch remote image using passed body", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     const body = "qwerty";
     await resolveImage({ uri: jpgImageUrl, body });
@@ -56,7 +56,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should fetch remote image using passed credentials", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     const credentials = "include";
     await resolveImage({ uri: jpgImageUrl, credentials });
@@ -65,7 +65,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should not include credentials if not exist", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     await resolveImage({ uri: jpgImageUrl });
 
@@ -73,7 +73,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should render a jpeg image over http", async () => {
-    fetch.once(localJPGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
 
     const image = await resolveImage({ uri: jpgImageUrl });
 
@@ -83,7 +83,7 @@ describe("image resolveImage", () => {
   });
 
   test("Should render a png image over http", async () => {
-    fetch.once(localPNGImage);
+    fetch.mockResponseOnce(new Response(new Blob([localPNGImage])));
 
     const image = await resolveImage({ uri: pngImageUrl });
 
@@ -94,7 +94,7 @@ describe("image resolveImage", () => {
 
   test("Should render a local image from src object", async () => {
     const image = await resolveImage({
-      uri: "./packages/layout/tests/assets/test.jpg",
+      uri: path.resolve(__dirname, "../../layout/tests/assets/test.jpg"),
     });
 
     expect(image.data).toBeTruthy();
@@ -137,16 +137,16 @@ describe("image resolveImage", () => {
   });
 
   test("Should not cache previously loaded remote images if flag false", async () => {
-    fetch.mockResponse(localJPGImage);
-
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
     const image1 = await resolveImage({ uri: jpgImageUrl }, { cache: false });
+    fetch.mockResponseOnce(new Response(new Blob([localJPGImage])));
     const image2 = await resolveImage({ uri: jpgImageUrl }, { cache: false });
 
     expect(image1).not.toBe(image2);
   });
 
   test("Should cache previously loaded local images by default", async () => {
-    fetch.mockResponse(localJPGImage);
+    fetch.mockResponse(new Response(new Blob([localJPGImage])));
 
     const image1 = await resolveImage({ uri: jpgImageUrl });
     const image2 = await resolveImage({ uri: jpgImageUrl });

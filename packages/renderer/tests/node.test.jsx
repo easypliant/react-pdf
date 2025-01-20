@@ -34,7 +34,7 @@ describe("node", () => {
   test("should render to string call render callback", async () => {
     const mock = vi.fn();
 
-    await ReactPDF.renderToString(<TestDocument onRender={mock} />);
+    await ReactPDF.renderToStream(<TestDocument onRender={mock} />);
 
     expect(mock.mock.calls).toHaveLength(1);
   });
@@ -107,7 +107,7 @@ describe("node", () => {
       </Document>
     );
 
-    await ReactPDF.renderToString(doc);
+    await ReactPDF.renderToStream(doc);
 
     expect(mock.mock.calls).toHaveLength(1);
   });
@@ -128,7 +128,7 @@ describe("node", () => {
       </Document>
     );
 
-    await ReactPDF.renderToString(doc);
+    await ReactPDF.renderToStream(doc);
 
     expect(renderMock.mock.calls).toHaveLength(2);
   });
@@ -149,7 +149,7 @@ describe("node", () => {
       </Document>
     );
 
-    await ReactPDF.renderToString(doc);
+    await ReactPDF.renderToStream(doc);
 
     expect(mock.mock.calls).toHaveLength(1);
   });
@@ -170,7 +170,7 @@ describe("node", () => {
       </Document>
     );
 
-    await ReactPDF.renderToString(doc);
+    await ReactPDF.renderToStream(doc);
 
     expect(renderMock.mock.calls).toHaveLength(2);
   });
@@ -204,7 +204,7 @@ describe("node", () => {
       </Document>
     );
 
-    await ReactPDF.renderToString(doc);
+    await ReactPDF.renderToStream(doc);
 
     expect(renderMock.mock.calls).toHaveLength(6);
   });

@@ -35,7 +35,7 @@ const pdf = (initialValue) => {
   if (initialValue) updateContainer(initialValue);
 
   const render = async (compress = true) => {
-    const props = container.document.props || {};
+    const props = container.document && container.document.props ? container.document.props : {};
     const {
       author,
       creationDate = new Date(),
