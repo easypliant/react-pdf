@@ -1,6 +1,6 @@
 {
   "name": "@easypliant/react-pdf-vite-example",
-  "version": "3.3.12",
+  "version": "4.0.0",
   "license": "MIT",
   "private": true,
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
@@ -11,7 +11,7 @@
     "build:site": "vite build ./src"
   },
   "dependencies": {
-    "@easypliant/react-pdf-renderer": "^4.1.6"
+    "@easypliant/react-pdf-renderer": "^5.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",

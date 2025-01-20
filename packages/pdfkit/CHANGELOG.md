@@ -1,5 +1,16 @@
 # @easypliant/react-pdf-pdfkit
 
+## 5.0.0
+
+### Major Changes
+
+- Update to react 19
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-png-js@4.0.0
+
 ## 4.0.0
 
 ### Major Changes

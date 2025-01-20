@@ -1,5 +1,16 @@
 # @easypliant/react-pdf-e2e-node-esm
 
+## 3.0.0
+
+### Major Changes
+
+- Update to react 19
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-renderer@5.0.0
+
 ## 2.0.16
 
 ### Patch Changes
@@ -32,7 +43,8 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`aab7d958`](https://github.com/diegomura/react-pdf/commit/aab7d95870d9073e4acb004aa0cce9cfa19b7f0e)]:
+- Updated dependencies
+  [[`aab7d958`](https://github.com/diegomura/react-pdf/commit/aab7d95870d9073e4acb004aa0cce9cfa19b7f0e)]:
   - @easypliant/react-pdf-renderer@4.1.2
 
 ## 2.0.11
@@ -46,14 +58,16 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`52b2f253`](https://github.com/diegomura/react-pdf/commit/52b2f25349bee0c09399bc2e7e5e89db5e1433fd)]:
+- Updated dependencies
+  [[`52b2f253`](https://github.com/diegomura/react-pdf/commit/52b2f25349bee0c09399bc2e7e5e89db5e1433fd)]:
   - @easypliant/react-pdf-renderer@4.1.0
 
 ## 2.0.9
 
 ### Patch Changes
 
-- Updated dependencies [[`7add014c`](https://github.com/diegomura/react-pdf/commit/7add014c6bc9cff649dd1a56fc47214888613b6b)]:
+- Updated dependencies
+  [[`7add014c`](https://github.com/diegomura/react-pdf/commit/7add014c6bc9cff649dd1a56fc47214888613b6b)]:
   - @easypliant/react-pdf-renderer@4.0.2
 
 ## 2.0.8
@@ -67,14 +81,17 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`afe4bcfe`](https://github.com/diegomura/react-pdf/commit/afe4bcfe6f4b991cf22341242fc27d169b758d47), [`70f29a04`](https://github.com/diegomura/react-pdf/commit/70f29a0407b1d56e9a7932b25c0d69132e9b4119)]:
+- Updated dependencies
+  [[`afe4bcfe`](https://github.com/diegomura/react-pdf/commit/afe4bcfe6f4b991cf22341242fc27d169b758d47),
+  [`70f29a04`](https://github.com/diegomura/react-pdf/commit/70f29a0407b1d56e9a7932b25c0d69132e9b4119)]:
   - @easypliant/react-pdf-renderer@4.0.0
 
 ## 2.0.6
 
 ### Patch Changes
 
-- Updated dependencies [[`ed94775`](https://github.com/diegomura/react-pdf/commit/ed94775f4d44db0886ff08c71d09f446bace6392)]:
+- Updated dependencies
+  [[`ed94775`](https://github.com/diegomura/react-pdf/commit/ed94775f4d44db0886ff08c71d09f446bace6392)]:
   - @easypliant/react-pdf-renderer@3.4.5
 
 ## 2.0.5
@@ -109,5 +126,6 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`fab09cc`](https://github.com/diegomura/react-pdf/commit/fab09cc9814326fdb44d2bcb7097ba9960d441d1)]:
+- Updated dependencies
+  [[`fab09cc`](https://github.com/diegomura/react-pdf/commit/fab09cc9814326fdb44d2bcb7097ba9960d441d1)]:
   - @easypliant/react-pdf-renderer@3.4.0

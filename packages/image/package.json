@@ -1,6 +1,6 @@
 {
   "name": "@easypliant/react-pdf-image",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "license": "MIT",
   "description": "Parses the images in png or jpeg format for react-pdf document",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.20.13",
-    "@easypliant/react-pdf-png-js": "^3.0.0",
+    "@easypliant/react-pdf-png-js": "^4.0.0",
     "jay-peg": "^1.1.1"
   },
   "files": [
