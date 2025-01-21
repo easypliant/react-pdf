@@ -1,5 +1,12 @@
 # @easypliant/react-pdf-svgkit
 
+## 4.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-pdfkit@6.0.2
+
 ## 4.0.1
 
 ### Patch Changes

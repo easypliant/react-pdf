@@ -1,5 +1,11 @@
 # @easypliant/react-pdf-pdfkit
 
+## 6.0.2
+
+### Patch Changes
+
+- Crypto
+
 ## 6.0.1
 
 ### Patch Changes

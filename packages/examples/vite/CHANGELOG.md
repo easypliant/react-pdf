@@ -1,5 +1,12 @@
 # @easypliant/react-pdf-examples
 
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @easypliant/react-pdf-renderer@6.0.2
+
 ## 5.0.1
 
 ### Patch Changes

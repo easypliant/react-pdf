@@ -1,6 +1,6 @@
 {
   "name": "@easypliant/react-pdf-renderer",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "license": "MIT",
   "description": "Create PDF files on the browser and server",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
@@ -25,8 +25,8 @@
   "dependencies": {
     "@babel/runtime": "^7.20.13",
     "@easypliant/react-pdf-font": "^5.0.1",
-    "@easypliant/react-pdf-layout": "^6.0.1",
-    "@easypliant/react-pdf-pdfkit": "^6.0.1",
+    "@easypliant/react-pdf-layout": "^6.0.2",
+    "@easypliant/react-pdf-pdfkit": "^6.0.2",
     "@easypliant/react-pdf-primitives": "^6.0.1",
     "@easypliant/react-pdf-reconciler": "^3.0.1",
     "@easypliant/react-pdf-render": "^6.0.1",
